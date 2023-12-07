@@ -38,7 +38,6 @@ fetch(url, {
 })
   .then((response) => response.json())
   .then((apiKeyData) => {
-    console.log("Success:", apiKeyData);
     return fetch(
       "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies",
       {
@@ -51,7 +50,6 @@ fetch(url, {
   })
   .then((response) => response.json())
   .then((data) => {
-    console.log("Second request success:", data);
     planetData = data;
   })
   .catch((error) => console.error("Error:", error));
@@ -129,7 +127,7 @@ function closePopup() {
   toggleStarVisibility(false);
 }
 
-const numStars = 100;
+const numStars = 40;
 const body = document.body;
 let stars = [];
 
