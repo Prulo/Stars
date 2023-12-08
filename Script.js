@@ -24,7 +24,6 @@ const moonInfo = document.getElementsByClassName("moon_info")[0];
 let planetData;
 
 const url = "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys";
-
 const datakey = {
   key1: "value1",
 };
